@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Martel+Sans:wght@300&family=Nunito&display=swap");
+
+:root {
+  --primary-color: #e50914;
+  --dark-color: #000000;
+  --light-color: #f4f4f4;
+  --bg-color: #303030;
+  --cream-color:#e6e6e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+.container .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 22px 25px;
+  z-index: 10000000;
+}
+.container .logo img {
+  width: 13%;
+}
+
+#banner{
+  color: var(--light-color);
+  object-fit: contain;
+  height: 844px;
+  background-position: center center;
+  background-size: cover;
+}
+#banner__contents{
+  margin-left: 70px;
+  padding-top: 540px;
+  height: 190px;
+
+}
+#banner__title{
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+#banner__description{
+  width: 45rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+  font-size: .9rem;
+  max-width: 360px;
+  height: 80px;
+}
+#banner__button{
+  cursor: pointer;
+  color: var(--light-color);
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: .2vw;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: .5rem;
+  background-color: var(--bg-color);
+  padding-bottom: .5rem;
+}
+#banner__button:hover{
+  color: var(--dark-color);
+  background-color: var(--cream-color);
+  transition: all .3s;
+}
+#banner__fadeBottom{
+  height: 36.4rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--bg-color),
+    #111
+  );
+}
+
+.row{
+  margin-left: 20px;
+  color: var(--light-color);
+}
+.row__poster{
+  object-fit: contain;
+  width: 100%;
+  max-height: 120px;
+  margin-right: 10px;
+  transition: transform 500ms;
+}
+.row__posters::-webkit-scrollbar{
+  display: none;
+}
+.row__posters{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  
+}
+.row__poster:hover{
+  transform: scale(1.08);
+}
+.row__posterLarge, 
+.row__posterLarge1,
+.row__posterLarge2{
+  object-fit: contain;
+  width: 100%;
+  max-height: 250px;
+  margin-right: 10px;
+  transition: transform 500ms;
+
+}
+.row__posterLarge:hover,
+.row__posterLarge1:hover,
+.row__posterLarge2:hover{
+  transform: scale(1.09);
+  opacity: 1;
+
+}

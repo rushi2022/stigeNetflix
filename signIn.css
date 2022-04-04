@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Martel+Sans:wght@300&family=Nunito&display=swap");
+
+:root {
+  --primary-color: #e50914;
+  --dark-color: #000000;
+  --light-color: #f4f4f4;
+  --bg-color: #303030;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--dark-color);
+}
+
+
+.container .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 25px;
+    z-index: 1000;
+  }
+  .container .logo img {
+    width: 13%;
+  }
+  .container .logo a {
+    color: var(--light-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 8px 18px;
+    border-radius: 5px;
+  }
+  .banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+  }  
+
+  .banner:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+  }
+  .banner .fit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .banner .box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: var(--dark-color);
+    opacity: 0.8;
+    padding: 60px;
+    text-align: left;
+    color: var(--light-color);
+  }
+  
+  .banner .box .heading {
+    display: flex;
+    flex-direction: column;
+  
+   
+  }
+  
+  .banner .box .heading h1 {
+    font-size: 2.3rem;
+    color: var(--light-color);
+    letter-spacing: 3px;
+    width: 75%;
+    margin: 15px 0px;
+    
+  }
+
+  .banner .box .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin: 20px 0px;
+   
+  }
+  
+  .banner .box .search input {
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    min-width: 400px;
+    height: 40px;
+    align-items: center;
+   opacity: unset;
+  }
+  .banner .box .search a {
+    min-width:100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--light-color);
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: var(--primary-color);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    font-size: 1rem;
+    line-height: 60px;
+    padding: 0 30px;
+  }
+  
+  .banner .box p{
+    margin: 10px 0px;
+    max-width: fit-content;
+  }
+
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 0;
+  }
+  
+  .footer .one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 45%;
+  }
+  
+  .footer .one li {
+    padding: 7px 0px;
+  }
+  .footer .one li a {
+    color: var(--light-color);
+    text-decoration: none;
+  }
+  
+  .footer .one li a:hover {
+    border-bottom: 2px solid var(--light-color);
+  }
+
+
+
+
+  @media screen and (max-width: 787px) {
+    .container .logo {
+      padding: 20px 50px;
+    }
+    .container .logo img {
+      width: 23%;
+    }
+
+    .banner .box .heading p {
+      font-size: 1.2rem;
+      padding: 13px 0px;
+      padding-bottom: 17px;
+    }
+  
+    .banner .box .search {
+      flex-direction: column;
+    }
+  
+    .banner .box .search input {
+      min-width: 310px;
+      margin-bottom: 20px;
+    }
+    .banner .box .search a {
+      text-align: center;
+    }
+  
+  }  
+
+  @media screen and (max-width: 490px) {
+    .container .logo img {
+      width: 25%;
+    }
+
+    .banner .box .heading p {
+      font-size: 1.2rem;
+      padding: 12px 0px;
+      padding-bottom: 15px;
+    }
+  
+    .banner .box .search input {
+      margin-bottom: 10px;
+    }
+    .banner .box .search a {
+      text-align: center;
+    }
+  }

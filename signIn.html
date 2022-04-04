@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signIn.css" />
+    <title>Document</title>
+</head>
+<body>
+  
+    <section class="container">
+       
+        <div class="logo">
+          <img src="logo.png" />
+        
+        </div>
+      </section>
+      
+      <section class="banner">
+        <img src="bd2.jpg" class="fit" />
+        <div class="box">
+            <div class="heading">
+              <h1>Sigh In</h1>
+             
+            </div>
+            <form name="form1">
+            <div class="search">
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="Email address"
+                class="main-header-content-input"
+              />
+              
+              </div>
+              <div class="search" >
+              <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Password"
+              class="main-header-content-input"
+            />
+          </div>
+       <div class="search">
+        <a  class="btn btn-lg" onclick="ValidateEmail(document.form1.email,document.form1.pass)" >Sign In</a>
+       </div>
+      </form> 
+       <p>New to Netflix?<a>Sign Up now.</a></p>
+       <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+      </section>
+    
+
+    
+      <script src="signinVelidation.js"></script>
+
+
+</body>
+</html>
